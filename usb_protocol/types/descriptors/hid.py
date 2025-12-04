@@ -36,9 +36,9 @@ HIDDescriptor = DescriptorFormat(
     "bNumDescriptors"     / DescriptorField("Number of HID class descriptors to follow", default=0),
 )
 
-# This is not really a stand-alone descriptor, but it it  is more a reference to a report 
-# descriptor that can retrieved seperately. It is part of the HIDDescriptor above. 
-# That descriptor can contain multiple descriptor references. To support this, a seperate
+# This is not really a stand-alone descriptor, but rather a reference to a descriptor
+# that can be retrieved seperately. It is part of the HIDDescriptor above.  The HID
+# descriptor can contain multiple descriptor references. To support this, a separate
 # descriptor format is used.
 HIDDescriptorReference = DescriptorFormat(
     "bDescriptorType"     / DescriptorField("HID Descriptor Type", default=HidClassSpecificDescriptorTypes.CS_REPORT),
