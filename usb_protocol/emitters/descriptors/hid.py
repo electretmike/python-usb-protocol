@@ -12,7 +12,7 @@ class HIDDescriptorEmitter(ComplexDescriptorEmitter):
     
     @contextmanager
     def DescriptorReference(self):
-        """ Context manager that allows addition of a subordinate report descriptor.
+        """ Context manager that allows addition of a descriptor reference.
 
         It can be used with a `with` statement; and yields an HIDDescriptorReferenceEmitter
         that can be populated:
