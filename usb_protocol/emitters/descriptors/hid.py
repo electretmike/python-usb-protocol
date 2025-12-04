@@ -18,6 +18,8 @@ class HIDDescriptorEmitter(ComplexDescriptorEmitter):
         that can be populated:
 
             with hiddescriptor.DescriptorReference() as r:
+                r.bDescriptorType = 0x22
+                r.wDescriptorLength = 0x10
                 r.wDescriptorLength = 0x10
 
         This adds the relevant descriptor, automatically.
