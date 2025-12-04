@@ -22,7 +22,7 @@ class HIDDescriptorEmitter(ComplexDescriptorEmitter):
                 r.wDescriptorLength = 0x10
                 r.wDescriptorLength = 0x10
 
-        This adds the relevant descriptor, automatically.
+        This adds the relevant descriptor reference, automatically.
         """
 
         descriptor = HIDDescriptorReferenceEmitter()
